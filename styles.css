@@ -35,7 +35,7 @@
     padding-top:1.4em;
     color: white;
     text-shadow: 3px 1px rgb(75, 73, 73);
-    font-size: min(19vw,9rem);
+    font-size: min(16vw,9rem);
     text-align: center;
     align-items: center;
     text-transform: uppercase; 
@@ -60,9 +60,5 @@ footer{
 }
 /* main */
 /* footer */
-.w100{
-    height: 192px;
-   width: 127;
 
-}
 /* footer */
