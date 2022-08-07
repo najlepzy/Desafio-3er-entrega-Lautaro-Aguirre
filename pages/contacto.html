@@ -21,53 +21,74 @@
 
 <body>
 
-  <!-- Principio del header -->
-  <!-- Principio de la barra de navegación -->
-  <header>
-      <nav class="navbar navbar-expand-sm ">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../img/cam.png" alt="Avatar Logo" style="width:70px;"
-                      class="rounded-pill"> </a>
-              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="../index.html">inicio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./sobre nosotros.html">sobre nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./novedades.html">novedades</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./galeria.html">galeria</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">contacto</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      <!-- Final de la barra de navegación -->
-  </header>
-  <!-- Final del header -->
+    <!-- Principio del header -->
+    <!-- Principio de la barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/cam.png" alt="Avatar Logo" style="width:70px;"
+                        class="rounded-pill"> </a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre nosotros.html">sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./novedades.html">novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Final de la barra de navegación -->
+    </header>
+    <!-- Final del header -->
 
-  <main>
+    <main>
+        <!-- bg-image -->
+        
+         <div class="bg-image p-5 text-center shadow-1-strong .img-fluid"
+             style="background-image: url(../img/Formulario.jpg); height: 100vh;">
+             <!-- bg-image -->
 
-
-<div class="form-outline">
-    <input type="text" id="typeText" class="form-control" />
-    <label class="form-label" for="typeText">escribe tu nombre</label>
-    <div class="form-outline">
-        <input type="email" id="typeEmail" class="form-control" />
-        <label class="form-label" for="typeEmail">Escribe tu Email</label>
+<form action="/action_page.php center col-lg-12 vh-100" class="divcontainer">
+    <h1 class="contactanos">contactanos</h1>
+    <div class="form-group col-md-12">
+        <label for="name" class="form-label">nombre:</label>
+        <input type="name" class="form-control" id="name" placeholder="escribe tu nombre" name="name">
     </div>
-</div>
+    <div class="form-group col-md-12">
+        <label for="email" class="form-label">email:</label>
+        <input type="email" class="form-control" id="email" placeholder="escribe tu email" name="email">
+    </div>
+    <div class="form-group col-md-12">
+        <label for="phone" class="form-label">Telefono:</label>
+        <input type="phone" class="form-control" id="tel" placeholder="numero" name="tel">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="comment">Mensaje:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <div class="btn2 col-md-12">
+    <button type="submit" class="btn btn-dark">Enviar</button>
+    </div>
+</form>
+
+           
+</main>
 
 
 
@@ -75,9 +96,6 @@
 
 
 
-
-
-  </main>
 
 
 
@@ -123,6 +141,7 @@
             <a class="text-dark" href="">Lautaro Aguirre</a>
         </div>
         <!-- Copyright -->
+
     </footer>
     <!-- Fin del footer-->
 
