@@ -3,22 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --g1: rgba(255, 255, 255, 0.37);
-    --g2:rgb(119, 113, 113);
-    --g3:rgb(116, 114, 114);
-    --g4:rgb(75, 73, 73);
-    --g5:rgba(117, 126, 125, 0.97);
-    }
+    --g2: rgb(119, 113, 113);
+    --g3: rgb(116, 114, 114);
+    --g4: rgb(75, 73, 73);
+    --g5: rgba(117, 126, 125, 0.97);
+}
 
 main {
     height: fit-content;
 }
 
 html {
-     height: 100%;
-     margin: 0;
-     padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
 /* navbar */
 .navbar {
     background-color: rgb(0, 0, 0, 0.7);
@@ -52,7 +54,8 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--g3); important!;
+    color: var(--g3);
+    important !;
     animation-delay: 0ms;
 }
 
@@ -71,6 +74,7 @@ body {
     align-items: center;
     text-transform: uppercase;
 }
+
 .blur {
     background-color: rgba(19, 17, 17, 0.5);
     margin-top: 9em;
@@ -105,10 +109,11 @@ body {
 /* main */
 /* about us */
 
-.tm{
-    margin-top:9em ;
-    margin-bottom: 9em ;
+.tm {
+    margin-top: 9em;
+    margin-bottom: 9em;
 }
+
 .aus {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.514);
@@ -131,33 +136,35 @@ body {
 
 .texto {
     min-height: fit-content;
-    font-family: 'Bebas Neue',cursive;
-    
+    font-family: 'Bebas Neue', cursive;
+
 }
 
 .texto p {
     margin-top: 1.2em;
-    font-size: min(5vw,1.5em);
+    font-size: min(5vw, 1.5em);
     color: white;
     text-overflow: ellipsis;
     height: fit-content;
     text-shadow: 1px 1px black;
-    
-    
+
+
 }
-.line{
+
+.line {
     background-color: rgba(0, 0, 0, 0.322);
     margin: auto;
-    height: min(.3vh,3rem);
-    width: min(70vw,60rem); 
-    
+    height: min(.3vh, 3rem);
+    width: min(70vw, 60rem);
+
 }
 
 /* about us */
 /* inicio galeria */
 
 .galeria {
-    margin: auto;important!;
+    margin: auto;
+    important !;
 
 }
 
@@ -253,13 +260,14 @@ input:hover {
     form {
         margin-top: 2em;
     }
-    .tm{
-       height: fit-content;
+
+    .tm {
+        height: fit-content;
     }
 }
 
 @media (min-width:480px) {
     form {
-        margin-top: auto;
+        margin-top: auto;git remote add origin https://github.com/najlepzy/Desafio-6-7-y-8-Coder-Lautaro-Aguirre.git
     }
 }
