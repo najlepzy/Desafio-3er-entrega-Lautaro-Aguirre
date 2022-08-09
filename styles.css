@@ -21,6 +21,9 @@ body {
     position: relative;
 
 }
+h1{
+    animation: animate__flipInX;
+}
 
 /* navbar */
 .navbar {
@@ -65,6 +68,13 @@ body {
     align-items: center;
     text-transform: uppercase;
 }
+.blur {
+    background-color: rgba(19, 17, 17, 0.5);
+    margin-top: 9em;
+    margin-bottom: 9em;
+    padding-bottom: 8em;
+    align-items: center;
+}
 
 .principal p {
     text-transform: capitalize;
@@ -76,17 +86,10 @@ body {
 .bg-image {
     background-color: rgb(0, 0, 0);
     background: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
+  /*   background-size: cover; */
 }
 
-.blur {
-    background-color: rgba(19, 17, 17, 0.5);
-    margin-top: 9em;
-    padding-bottom: 8em;
-    align-items: center;
-}
+
 
 .row {
     justify-content: center;
@@ -100,35 +103,46 @@ body {
 
 /* main */
 /* about us */
+.tm{
+    margin-top:9em ;
+    margin-bottom: 9em ;
+}
 .aus {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.514);
     width: 70%;
     font-family: 'Bebas Neue', cursive;
     border: 1px solid rgba(255, 255, 255, 0.37);
+    margin-top: 2em;
+    margin-bottom: 9em;
 }
 
 .au {
     margin-top: 0.2em;
     color: white;
     text-shadow: 3px 1px rgb(75, 73, 73);
-    font-size: min(16vw, 9rem);
+    font-size: min(9vw, 6rem);
     text-transform: uppercase;
     white-space: nowrap;
     height: fit-content;
 }
 
 .texto {
+    min-height: fit-content;
     margin-top: 4em;
     background-color: rgba(0, 0, 0, 0.49);
     border: 1px solid rgb(75, 73, 73);
 }
 
 .texto p {
-    font-size: 2em;
+    font-size: min(3vw,1.3em);
     color: white;
     text-shadow: 1px 1px black;
+    text-overflow: ellipsis;
     padding: 15px;
+    text-decoration:underline;
+    height: fit-content;
+    
 }
 
 /* about us */
@@ -167,8 +181,6 @@ body {
     background-color: rgba(19, 17, 17, 0.5);
 
 }
-
-.container {}
 
 /* fin galeria */
 /* formulario */
