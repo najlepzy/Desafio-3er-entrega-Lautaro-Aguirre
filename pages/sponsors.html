@@ -24,21 +24,21 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- bootstrapcss -->
     <!-- archivo css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- archivo css -->
     <!-- icono logo -->
-    <link rel="shortcut icon" href="./img/cam.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/cam.png" type="image/x-icon">
     <!-- icono logo -->
     <title>MINIMAL</title>
 </head>
 
 <body>
     <!-- Principio del header -->
+    <!-- Principio de la barra de navegación -->
     <header>
-        <!-- Principio de la barra de navegación -->
         <nav class="navbar navbar-expand-sm ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/cam.png" alt="Avatar Logo" style="width:70px;"
+                <a class="navbar-brand" href="#"><img src="../img/cam.png" alt="Avatar Logo" style="width:70px;"
                         class="rounded-pill"> </a>
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -47,19 +47,19 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">inicio</a>
+                            <a class="nav-link" href="../index.html">inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/sobre nosotros.html">sobre nosotros</a>
+                            <a class="nav-link" href="./sobre nosotros.html">sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/sponsors.html">sponsors</a>
+                            <a class="nav-link" href="#">sponsors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/galeria.html">galeria</a>
+                            <a class="nav-link" href="./galeria.html">galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">contacto</a>
+                            <a class="nav-link" href="./contacto.html">contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -69,24 +69,57 @@
     </header>
     <!-- Final del header -->
 
-    <!-- Principio del main -->
-    <main>
-        <div class="principal countainer-fluid">
-            <!-- bg-img -->
-
-            <div class="bg-image p-5 text-center shadow-1-strong .img-fluid"
-                style="background-image: url(./img/fondoprincipal.jpg); height: fit-content;">
-                <!-- Square-Blur -->
-                <div class="blur">
-                    <!-- bg-img -->
-                    <h1 class="mb-3 h2 col-xs">MINIMAL</h1>
-                    <p>photo studio</p>
+<!-- inicio main-->
+<main>
+    <!-- galeria inicio -->
+    <div class="bg-image p-5 text-center shadow-1-strong .img-fluid"
+    style="background-image: url(../img/fondo.jpg); height: fit-content;">
+    
+        <section class="galeria min-vh-100">
+            <div class="container-lg">
+                <div class="blur2">
+                    <h1 class="gal animate__animated animate__slideInUp">Sponsors</h1>
                 </div>
-                <!-- Square-Blur -->
+                <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="col ratio ratio-4x3 img-limit">
+                         <!-- logo nikon -->
+                        <img class="w-100 h-100" src="../img/sponsors/nikon.png" alt="">
+                    </div>
+                    <!-- logo nikon -->
+                    <div class="col ratio ratio-4x3 img-limit">
+                        <!-- logo sinar -->
+                        <img class="w-100 h-100" src="../img/sponsors/sinar.png" alt="">
+                        <!-- logo sinar -->
+                    </div>
+                    <div class="col ratio ratio-4x3 img-limit">
+                        <!-- logo sony-->
+                        <img class="w-100 h-100" src="../img/sponsors/sony.png" alt="">
+                         <!-- logo sony-->
+                    </div>
+                    <div class="col ratio ratio-4x3 img-limit">
+                        <!-- logo po -->
+                        <img class="w-100 h-100" src="../img/sponsors/5848242ecef1014c0b5e49c8.png" alt="">
+                        <!-- logo po -->
+                    </div>
+                    <div class="col ratio ratio-4x3 img-limit">
+                        <!-- logo hb -->
+                        <img class="w-100 h-100" src="../img/sponsors/Hasselblad.jpg" alt="">
+                       <!-- logo hb -->
+                    </div>
+                    <div class="col ratio ratio-4x3 img-limit">
+                        <!-- logo panasonic -->
+                        <img class="w-100 h-100" src="../img/sponsors/panasonic.png" alt="">
+                        <!-- logo panasonic -->
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- galeria fin -->
     </main>
-    <!-- Fin del main -->
+    <!-- fin main-->
+
+
+
     <!-- Inicio footer -->
 
     <footer class="text-center text-white" style="background-color: rgb(0, 0, 0, 0.7);">
@@ -134,10 +167,6 @@
 
 
 
-
-
-
-
     <!-- reposicionamiento de pagina -->
     <a onclick="removeAnchorFormURL()" href="#"></a>
 
@@ -167,5 +196,4 @@
     </script>
     <!-- linkeado js -->
 </body>
-
 </html>

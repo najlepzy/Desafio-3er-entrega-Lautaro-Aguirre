@@ -53,7 +53,7 @@
                             <a class="nav-link" href="#">sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./novedades.html">novedades</a>
+                            <a class="nav-link" href="./sponsors.html">sponsors</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./galeria.html">galeria</a>
@@ -71,25 +71,22 @@
     <!--  sobre nosotros inicio -->
     <main>
         <div class="bg-image p-5 text-center shadow-1-strong .img-fluid bg-size-cover"
-            style="background-image: url(../img/sobrenos.jpg); height:fit-content;">
+            style="background-image: url(../img/sobrenos.jpg); height:100vh;">
             <div class="tm">
                 <div class="aus">
-                    <h1 class="au text-center">sobre nosotros</h1>
+                    <h1 class="au text-center animate__animated animate__zoomInDown">sobre nosotros</h1>
                 </div>
-                <div class="texto text-center">
+                <div class="texto">
+                    <div class="line"></div>
                     <p>Nos especializamos en fotograf&iacute;a de paisajes con el fin de capturar el momento perfecto
-                        en el lugar indicado.</p>
-                </div>
-                <br>
-                <div class="texto text-center">
-                    <p>Somos incre&iacute;blemente afortunados de tener un equipo de fot&oacute;grafos que trabajan con
-                        nosotros en cualquier
-                        momento.</p>
-                </div>
-                <br>
-                <div class="texto text-center">
-                    <p>Para nosotros la fotograf&iacute;a capta un evento que desencadena la historia es un momento
-                        especial que te hizo detenerte y observar el paisaje</p>
+                        en el lugar indicado. <br>
+                    
+                        Somos incre&iacute;blemente afortunados de tener un equipo de fot&oacute;grafos que trabajan con
+                        nosotros en cualquier momento. <br>
+                    
+                    Para nosotros la fotograf&iacute;a capta un evento que desencadena la historia es un momento
+                    especial que te hizo detenerte y observar el paisaje</p>
+                    <div class="line"></div>
                 </div>
             </div>
         </div>
@@ -99,33 +96,34 @@
 
 
 
-    <!--Inicio footer -->
+    <!-- Inicio footer -->
+
     <footer class="text-center text-white" style="background-color: rgb(0, 0, 0, 0.7);">
         <!-- Grid container -->
-        <div class="container pt-4">
+        <div class="container pt-4 col-xs-12 col-md-6 col-lg-3">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
                 <!-- Github -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
@@ -133,9 +131,9 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2022 Copyright:
-            <a class="text-dark" href="">Lautaro Aguirre</a>
+            <a class="text-white" href="">Lautaro Aguirre</a>
         </div>
         <!-- Copyright -->
     </footer>
@@ -144,10 +142,33 @@
 
 
 
+    <!-- reposicionamiento de pagina -->
+    <a onclick="removeAnchorFormURL()" href="#"></a>
+
+    <script>
+        history.scrollRestoration = "manual";
+
+        const removeAnchorFormURL = () => {
+            setTimeout(() => {
+                window.history.replaceState({}, "", window.location.href.split("#")[0]);
+            }, 100);
+        };
+    </script>
+    <!-- reposicionamiento de pagina -->
+
+
+
+
+
+
+
+    <!-- linkeado js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
+    <!-- linkeado js -->
 </body>
+</html>

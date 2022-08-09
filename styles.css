@@ -3,14 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --g1: rgba(255, 255, 255, 0.37);
+    --g2:rgb(119, 113, 113);
+    --g3:rgb(116, 114, 114);
+    --g4:rgb(75, 73, 73);
+    --g5:rgba(117, 126, 125, 0.97);
+    }
 
 main {
     height: fit-content;
-
 }
 
 html {
-    height: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
 }
 
 body {
@@ -19,12 +27,7 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
-
 }
-h1{
-    animation: animate__flipInX;
-}
-
 /* navbar */
 .navbar {
     background-color: rgb(0, 0, 0, 0.7);
@@ -49,7 +52,7 @@ h1{
 }
 
 .nav-link:hover {
-    color: rgb(116, 114, 114); importan!;
+    color: var(--g3); importan!;
     animation-delay: 0ms;
 }
 
@@ -62,7 +65,7 @@ h1{
 .principal h1 {
     padding-top: 1.4em;
     color: white;
-    text-shadow: 3px 1px rgb(75, 73, 73);
+    text-shadow: 3px 1px var(--g4);
     font-size: min(16vw, 9rem);
     text-align: center;
     align-items: center;
@@ -79,14 +82,13 @@ h1{
 .principal p {
     text-transform: capitalize;
     color: white;
-    text-shadow: 1px 1px rgb(75, 73, 73);
+    text-shadow: 1px 1px var(--g);
     font-size: 2em;
 }
 
 .bg-image {
-    background-color: rgb(0, 0, 0);
     background: no-repeat;
-  /*   background-size: cover; */
+    background-size: cover;
 }
 
 
@@ -110,9 +112,9 @@ h1{
 .aus {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.514);
-    width: 70%;
+    width: 80%;
     font-family: 'Bebas Neue', cursive;
-    border: 1px solid rgba(255, 255, 255, 0.37);
+    border: 1px solid var(--g1);
     margin-top: 2em;
     margin-bottom: 9em;
 }
@@ -120,8 +122,8 @@ h1{
 .au {
     margin-top: 0.2em;
     color: white;
-    text-shadow: 3px 1px rgb(75, 73, 73);
-    font-size: min(9vw, 6rem);
+    text-shadow: 3px 1px var(--g4);
+    font-size: min(10vw, 6rem);
     text-transform: uppercase;
     white-space: nowrap;
     height: fit-content;
@@ -129,28 +131,31 @@ h1{
 
 .texto {
     min-height: fit-content;
-    margin-top: 4em;
-    background-color: rgba(0, 0, 0, 0.49);
-    border: 1px solid rgb(75, 73, 73);
+    font-family: 'Bebas Neue',cursive;
 }
 
 .texto p {
-    font-size: min(3vw,1.3em);
+    margin-top: 1em;
+    font-size: min(6vw,1.4em);
     color: white;
-    text-shadow: 1px 1px black;
     text-overflow: ellipsis;
-    padding: 15px;
-    text-decoration:underline;
     height: fit-content;
     
+    
+}
+.line{
+    background-color: black;
+    margin: auto;
+    height: 3px;
+    width: 60em;    
 }
 
 /* about us */
 /* inicio galeria */
 
 .galeria {
-    margin: auto;
-    important !;
+    margin: auto;important !;
+
 }
 
 .galeria img {
@@ -167,14 +172,13 @@ h1{
 }
 
 .gal {
-    text-shadow: 2px 5px rgba(117, 126, 125, 0.97);
+    text-shadow: 2px 5px var(--g5);
     font-size: min(16vw, 9rem);
     text-align: center;
     align-items: center;
     color: white;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    animation: animate__bounceIn;
 }
 
 .blur2 {
@@ -241,27 +245,12 @@ input:hover {
 }
 
 /* formulario */
-/* footer */
-footer {
-    background-color: rgb(0, 0, 0, 0.7);
-    height: auto;
-    width: 100%;
-    min-height: 70px;
-    overflow: visible;
-    bottom: 0;
-}
-
-/* footer */
-@keyframes .au {
-    .au {
-        animation: ;
-    }
-}
 
 @media (min-width:360px) {
     form {
         margin-top: 2em;
     }
+  
 
 }
 
