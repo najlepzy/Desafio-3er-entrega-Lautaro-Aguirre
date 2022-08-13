@@ -1,0 +1,50 @@
+main{
+    .tm {
+        margin-top: 9em;
+        margin-bottom: 9em;
+    }
+
+    .aus {
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.514);
+        width: 80%;
+        font-family: 'Bebas Neue', cursive;
+        border: 1px solid $color2;
+        margin-top: 2em;
+        margin-bottom: 9em;
+    }
+
+    .au {
+        margin-top: 0.2em;
+        color: white;
+        text-shadow: 3px 1px $color4;
+        font-size: min(10vw, 6rem);
+        text-transform: uppercase;
+        white-space: nowrap;
+        height: fit-content;
+    }
+
+    .texto {
+        min-height: fit-content;
+        font-family: 'Bebas Neue', cursive;
+
+    }
+
+    .texto p {
+        margin-top: 1.2em;
+        font-size: min(5vw, 1.5em);
+        color: white;
+        text-overflow: ellipsis;
+        height: fit-content;
+        text-shadow: 1px 1px black;
+
+
+    }
+
+    .line {
+        background-color: rgba(0, 0, 0, 0.322);
+        margin: auto;
+        height: min(.3vh, 3rem);
+        width: min(70vw, 60rem);
+    }
+}

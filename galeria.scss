@@ -1,0 +1,57 @@
+main {
+    .galeria {
+        margin: auto;
+
+    }
+
+    .galeria img {
+        background-color: white;
+        padding: 15px;
+        width: 100%;
+        height: 20em;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+    }
+
+    .galeria img:hover {
+        border: 2px solid rgba(0, 0, 0, 0.49);
+    }
+
+    .gal {
+        text-shadow: 2px 5px var(--g5);
+        font-size: min(16vw, 9rem);
+        text-align: center;
+        align-items: center;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+    }
+
+    .blur2 {
+        background-color: rgba(19, 17, 17, 0.5);
+
+    }
+
+    .blur {
+        background-color: rgba(19, 17, 17, 0.5);
+        margin-top: 9em;
+        margin-bottom: 9em;
+        padding-bottom: 8em;
+        align-items: center;
+    }
+
+    .bg-image {
+        background: no-repeat;
+        background-size: cover;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .img-limit {
+        max-width: 26rem;
+        margin: 0.5rem;
+        margin-top: 2.5rem;
+    }
+}
