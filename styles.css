@@ -16,6 +16,8 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 body .navbar {
@@ -38,10 +40,13 @@ body .navbar-brand {
 }
 body .nav-link:hover {
   color: rgb(116, 114, 114);
-  animation-delay: 0ms;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
 }
 
 main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 main .principal {
@@ -68,6 +73,8 @@ main .principal p {
     margin-top: 2em;
   }
   .tm {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -170,11 +177,6 @@ main .btn2 {
   padding-top: 6%;
   text-align: center;
 }
-.texto {
-    min-height: fit-content;
-    font-family: 'Bebas Neue', cursive;
-
-}
 
 main .tm {
   margin-top: 9em;
@@ -196,9 +198,13 @@ main .au {
   font-size: min(10vw, 6rem);
   text-transform: uppercase;
   white-space: nowrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 main .texto {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   font-family: "Bebas Neue", cursive;
 }
@@ -207,6 +213,8 @@ main .texto p {
   font-size: min(5vw, 1.5em);
   color: white;
   text-overflow: ellipsis;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   text-shadow: 1px 1px black;
 }
@@ -215,124 +223,4 @@ main .line {
   margin: auto;
   height: min(0.3vh, 3rem);
   width: min(70vw, 60rem);
-}
-.line {
-    background-color: rgba(0, 0, 0, 0.322);
-    margin: auto;
-    height: min(.3vh, 3rem);
-    width: min(70vw, 60rem);
-
-}
-
-/* about us */
-/* inicio galeria */
-
-.galeria {
-    margin: auto;
-
-}
-
-.galeria img {
-    background-color: white;
-    padding: 15px;
-    width: 100%;
-    height: 20em;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-}
-
-.galeria img:hover {
-    border: 2px solid rgba(0, 0, 0, 0.49);
-}
-
-.gal {
-    text-shadow: 2px 5px var(--g5);
-    font-size: min(16vw, 9rem);
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-}
-
-.blur2 {
-    background-color: rgba(19, 17, 17, 0.5);
-
-}
-
-/* fin galeria */
-/* formulario */
-form {
-    background-color: rgb(75, 73, 73, 0.8);
-    align-items: center;
-    min-height: auto;
-    width: min(100%, 40em);
-    margin: auto;
-    margin-top: 3em;
-    padding-top: 4em;
-    padding-bottom: 2em;
-    align-items: center;
-    border: 4px solid rgba(19, 17, 17, 0.7);
-    border-radius: 5px;
-}
-
-.contactanos {
-    font-size: min(15vw, 6rem);
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-shadow: 1px 1px rgb(119, 113, 113);
-    text-align: center;
-}
-
-.form-control {
-    align-items: center;
-    text-align: center;
-    width: 70%;
-    margin: auto;
-}
-
-.form-group {
-    margin-top: 1em;
-}
-
-.form-check {
-    margin: auto;
-    padding-right: 2em;
-}
-
-label {
-    color: white;
-    text-shadow: 1px 1px black;
-    text-transform: capitalize;
-    margin: 1em;
-    text-align: center;
-}
-
-input:hover {
-    border-color: black;
-}
-
-.btn2 {
-    padding-top: 6%;
-    text-align: center;
-}
-
-/* formulario */
-
-@media (min-width:360px) {
-    form {
-        margin-top: 2em;
-    }
-
-    .tm {
-        height: fit-content;
-    }
-}
-
-@media (min-width:480px) {
-    form {
-        margin-top: auto;
-    }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
