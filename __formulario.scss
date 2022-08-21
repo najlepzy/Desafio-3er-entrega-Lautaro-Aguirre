@@ -12,6 +12,11 @@ main{
         border: 4px solid rgba(19, 17, 17, 0.7);
         border-radius: 5px;
     }
+    .formulario{
+        min-height: 100vh;
+        height: fit-content;
+        background-image: url(./img/Formulario.jpg);
+    }
 
     .contactanos {
         font-size: min(15vw, 6rem);

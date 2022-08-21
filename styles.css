@@ -43,6 +43,9 @@ body .nav-link:hover {
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
 }
+body .rounded-pill {
+  width: 70px;
+}
 
 main {
   height: -webkit-fit-content;
@@ -66,6 +69,19 @@ main .principal p {
   color: white;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.37);
   font-size: 2em;
+}
+main #inicio {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url(./img/fondoprincipal.jpg);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+footer .fo {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 360px) {
@@ -106,6 +122,12 @@ main .gal {
   font-family: "Bebas Neue", cursive;
   text-align: center;
 }
+main #galspon {
+  background-image: url(./img/fondo.jpg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 main .blur2 {
   background-color: rgba(19, 17, 17, 0.5);
 }
@@ -141,6 +163,13 @@ main form {
   align-items: center;
   border: 4px solid rgba(19, 17, 17, 0.7);
   border-radius: 5px;
+}
+main .formulario {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url(./img/Formulario.jpg);
 }
 main .contactanos {
   font-size: min(15vw, 6rem);
@@ -190,6 +219,12 @@ main .aus {
   border: 1px solid rgb(119, 113, 113);
   margin-top: 2em;
   margin-bottom: 9em;
+}
+main .aboutus {
+  background-image: url(./img/sobrenos.jpg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 main .au {
   margin-top: 0.2em;
