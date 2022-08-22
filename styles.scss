@@ -1,8 +1,13 @@
-$color1: rgba(255, 255, 255, 0.37);
-$color2: rgb(119, 113, 113);
-$color3: rgb(116, 114, 114);
-$color4: rgb(75, 73, 73);
-$color5: rgba(117, 126, 125, 0.97);
+
+/* map */
+$color: (
+gris1: rgba(255, 255, 255, 0.37),
+gris2: rgb(119, 113, 113),
+gris3: rgb(116, 114, 114),
+gris4: rgb(75, 73, 73),
+gris5: rgba(117, 126, 125, 0.97),
+);
+/* map */
 
 * {
     margin: 0;
@@ -47,11 +52,12 @@ body {
     }
 
     .nav-link:hover {
-        color:$color3;
+        color: map-get($map: $color, $key: "gris2");
         animation-delay: 0ms;
     }
-    .rounded-pill{
-        width:70px;
+
+    .rounded-pill {
+        width: 70px;
     }
 }
 
@@ -65,7 +71,7 @@ main {
     .principal h1 {
         padding-top: 1.4em;
         color: white;
-        text-shadow: 3px 1px $color4;
+        text-shadow: 3px 1px map-get($map: $color, $key: "gris4");
         font-size: min(16vw, 9rem);
         text-align: center;
         align-items: center;
@@ -75,9 +81,10 @@ main {
     .principal p {
         text-transform: capitalize;
         color: white;
-        text-shadow: 1px 1px $color1;
+        text-shadow: 1px 1px map-get($map: $color, $key: "gris2");
         font-size: 2em;
     }
+
     #inicio {
         height: fit-content;
         background-image: url(./img/fondoprincipal.jpg);
@@ -85,12 +92,14 @@ main {
     }
 }
 
-footer{
-    background-color: rgb(0, 0, 0, 0.7);
-     .fo {
-         background-color: rgba(0, 0, 0, 0.2);
-     }
+footer {
+    background-color: map-get($map: $color, $key: "gris3");
+
+    .fo {
+        background-color: map-get($map: $color, $key: "gris4");
+    }
 }
+
 @media (min-width:360px) {
     form {
         margin-top: 2em;

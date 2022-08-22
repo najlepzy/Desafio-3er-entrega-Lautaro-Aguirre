@@ -9,7 +9,7 @@ main{
         background-color: rgba(0, 0, 0, 0.514);
         width: 80%;
         font-family: 'Bebas Neue', cursive;
-        border: 1px solid $color2;
+        border: 1px solid map-get($map: $color, $key: "gris2");
         margin-top: 2em;
         margin-bottom: 9em;
     }
@@ -21,7 +21,7 @@ main{
     .au {
         margin-top: 0.2em;
         color: white;
-        text-shadow: 3px 1px $color4;
+        text-shadow: 3px 1px map-get($map: $color, $key: "gris4");
         font-size: min(10vw, 6rem);
         text-transform: uppercase;
         white-space: nowrap;

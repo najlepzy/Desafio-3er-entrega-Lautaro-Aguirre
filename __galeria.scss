@@ -18,7 +18,7 @@ main {
     }
 
     .gal {
-        text-shadow: 2px 5px var(--g5);
+        text-shadow: 2px 5px map-get($map: $color, $key: "gris1");
         font-size: min(16vw, 9rem);
         text-align: center;
         align-items: center;
@@ -35,14 +35,15 @@ main {
         background-color: rgba(19, 17, 17, 0.5);
 
     }
-
-    .blur {
-        background-color: rgba(19, 17, 17, 0.5);
-        margin-top: 9em;
-        margin-bottom: 9em;
-        padding-bottom: 8em;
-        align-items: center;
-    }
+/* extend */
+.blur {
+    @extend .blur2;
+    margin-top: 9em;
+    margin-bottom: 9em;
+    padding-bottom: 8em;
+    align-items: center;
+}
+/* extend */
 
     .bg-image {
         background: no-repeat;
