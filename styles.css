@@ -85,6 +85,9 @@ footer {
 footer .fo {
   background-color: rgb(75, 73, 73);
 }
+footer .btn:hover {
+  background-color: rgb(75, 73, 73);
+}
 
 @media (min-width: 360px) {
   form {

@@ -1,4 +1,4 @@
-main{
+@mixin aboutus {
     .tm {
         margin-top: 9em;
         margin-bottom: 9em;
@@ -9,19 +9,20 @@ main{
         background-color: rgba(0, 0, 0, 0.514);
         width: 80%;
         font-family: 'Bebas Neue', cursive;
-        border: 1px solid map-get($map: $color, $key: "gris2");
+        border: 1px solid map-get($map: $var, $key: "gris2");
         margin-top: 2em;
         margin-bottom: 9em;
     }
-    .aboutus{
-        background-image: url(./img/sobrenos.jpg); 
+
+    .aboutus {
+        background-image: url(./img/sobrenos.jpg);
         height: fit-content;
     }
 
     .au {
         margin-top: 0.2em;
         color: white;
-        text-shadow: 3px 1px map-get($map: $color, $key: "gris4");
+        text-shadow: 3px 1px map-get($map: $var, $key: "gris4");
         font-size: min(10vw, 6rem);
         text-transform: uppercase;
         white-space: nowrap;
@@ -51,4 +52,8 @@ main{
         height: min(.3vh, 3rem);
         width: min(70vw, 60rem);
     }
+}
+
+main {
+    @include aboutus();
 }
