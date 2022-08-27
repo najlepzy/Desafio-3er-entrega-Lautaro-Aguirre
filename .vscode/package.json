@@ -1,19 +1,22 @@
 {
   "name": "desafio-3er-entrega-lautaro-aguirre",
   "version": "1.0.0",
-  "description": "pagina completa para la tercer entrega",
+  "description": "pagina de fotografía",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/najlepzy/Desafio-6-7-y-8-Coder-Lautaro-Aguirre.git"
+    "url": "git+https://github.com/najlepzy/Desafio-3er-entrega-desafio-Lautaro-Aguirre.git"
   },
-  "author": "lautaro-aguirre",
+  "keywords": [
+    "fotografía"
+  ],
+  "author": "Lautaro Aguirre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/najlepzy/Desafio-6-7-y-8-Coder-Lautaro-Aguirre/issues"
+    "url": "https://github.com/najlepzy/Desafio-3er-entrega-desafio-Lautaro-Aguirre/issues"
   },
-  "homepage": "https://github.com/najlepzy/Desafio-6-7-y-8-Coder-Lautaro-Aguirre#readme"
+  "homepage": "https://github.com/najlepzy/Desafio-3er-entrega-desafio-Lautaro-Aguirre#readme"
 }
