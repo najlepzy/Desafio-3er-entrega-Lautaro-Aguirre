@@ -247,8 +247,10 @@ main .texto {
   min-height: -moz-fit-content;
   min-height: fit-content;
   font-family: "Bebas Neue", cursive;
+  margin: auto;
 }
-main .texto p {
+main .texto pre {
+  font-family: "Bebas Neue", cursive;
   margin-top: 1.2em;
   font-size: min(5vw, 1.5em);
   color: white;
@@ -257,6 +259,9 @@ main .texto p {
   height: -moz-fit-content;
   height: fit-content;
   text-shadow: 1px 1px black;
+}
+main .texto span {
+  padding-right: 4em;
 }
 main .line {
   background-color: rgba(0, 0, 0, 0.322);

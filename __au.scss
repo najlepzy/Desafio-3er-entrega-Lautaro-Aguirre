@@ -32,18 +32,21 @@
     .texto {
         min-height: fit-content;
         font-family: 'Bebas Neue', cursive;
-
+        margin: auto;
     }
 
-    .texto p {
+    .texto pre {
+        font-family: 'Bebas Neue', cursive;
         margin-top: 1.2em;
         font-size: min(5vw, 1.5em);
         color: white;
         text-overflow: ellipsis;
         height: fit-content;
         text-shadow: 1px 1px black;
+    }
 
-
+    .texto span {
+        padding-right: 4em;
     }
 
     .line {

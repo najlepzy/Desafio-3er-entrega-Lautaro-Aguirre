@@ -1,5 +1,6 @@
 /* map */
-$var: (gris1: rgba(255, 255, 255, 0.37),
+$var: (
+    gris1: rgba(255, 255, 255, 0.37),
     gris2: rgb(119, 113, 113),
     gris3: rgb(116, 114, 114),
     gris4: rgb(75, 73, 73),
@@ -32,7 +33,7 @@ $var: (gris1: rgba(255, 255, 255, 0.37),
     }
 
     .nav-link {
-        color: map-get($map: $var, $key:"blanco");
+        color: map-get($map: $var, $key: "blanco");
         white-space: nowrap;
     }
 
@@ -78,14 +79,16 @@ $var: (gris1: rgba(255, 255, 255, 0.37),
 
     }
 }
-@mixin foot{
+
+@mixin foot {
     background-color: map-get($map: $var, $key: "gris3");
 
     .fo {
         background-color: map-get($map: $var, $key: "gris4");
     }
-    .btn:hover{
-        background-color: map-get($map: $var, $key: "gris4" );
+
+    .btn:hover {
+        background-color: map-get($map: $var, $key: "gris4");
     }
 }
 
