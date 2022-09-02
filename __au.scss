@@ -35,7 +35,7 @@
         margin: auto;
     }
 
-    .texto pre {
+    .texto p {
         font-family: 'Bebas Neue', cursive;
         margin-top: 1.2em;
         font-size: min(5vw, 1.5em);
@@ -44,9 +44,8 @@
         height: fit-content;
         text-shadow: 1px 1px black;
     }
-
     .texto span {
-        padding-right: 4em;
+        white-space: wrap;
     }
 
     .line {

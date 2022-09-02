@@ -249,7 +249,7 @@ main .texto {
   font-family: "Bebas Neue", cursive;
   margin: auto;
 }
-main .texto pre {
+main .texto p {
   font-family: "Bebas Neue", cursive;
   margin-top: 1.2em;
   font-size: min(5vw, 1.5em);
@@ -261,7 +261,7 @@ main .texto pre {
   text-shadow: 1px 1px black;
 }
 main .texto span {
-  padding-right: 4em;
+  white-space: wrap;
 }
 main .line {
   background-color: rgba(0, 0, 0, 0.322);
